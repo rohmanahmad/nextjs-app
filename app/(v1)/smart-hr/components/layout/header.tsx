@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 // Import react scroll
 import { Link as LinkScroll } from "react-scroll";
-import ButtonOutline from "@/app/(v1)/(landing-page)/components/misc/button-outline";
+import ButtonOutline from "@/app/(v1)/smart-hr/components/misc/button-outline";
 import LogoVPN from "@/public/assets/Logo.svg";
 
 export default function Header () {
@@ -44,7 +44,7 @@ export default function Header () {
                   : " text-black-500 hover:text-orange-500 a")
               }
             >
-              About
+              Tentang
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -62,7 +62,7 @@ export default function Header () {
                   : " text-black-500 hover:text-orange-500 ")
               }
             >
-              Feature
+              Fitur
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -80,7 +80,7 @@ export default function Header () {
                   : " text-black-500 hover:text-orange-500 ")
               }
             >
-              Pricing
+              Harga
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -98,16 +98,18 @@ export default function Header () {
                   : " text-black-500 hover:text-orange-500 ")
               }
             >
-              Testimonial
+              Testimoni
             </LinkScroll>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-            <Link href="/">
+            <Link href="/accounts/login">
               <span className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all">
-                  Sign In
+                  Masuk
               </span>
             </Link>
-            <ButtonOutline>Sign Up</ButtonOutline>
+            <ButtonOutline>
+              <Link href="/accounts/register">Register</Link>
+            </ButtonOutline>
           </div>
         </nav>
       </header>
