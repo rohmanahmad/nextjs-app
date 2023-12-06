@@ -3,17 +3,17 @@ import React, { useMemo } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import ButtonOutline from "@/app/(v1)/smart-hr/components/misc/button-outline";
+import ButtonOutline from "@/app/(v1)/smart-hr/main/components/misc/button-outline";
 // import Maps from "@/public/assets/HugeGlobal.svg";
-import getScrollAnimation from "@/app/(v1)/smart-hr/components/utils/getScrollAnimation";
-import ScrollAnimationWrapper from "@/app/(v1)/smart-hr/components/layout/ScrollAnimationWrapper";
+import getScrollAnimation from "@/app/(v1)/smart-hr/main/components/utils/getScrollAnimation";
+import ScrollAnimationWrapper from "@/app/(v1)/smart-hr/main/components/page/ScrollAnimationWrapper";
 
 export default function Pricing (){
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
     <div
-      className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
+      className="bg-gradient-to-b from-white-300 to-white-500 w-full py-20"
       id="pricing"
     >
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">

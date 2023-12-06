@@ -1,10 +1,11 @@
 'use client'
+
 import React, { useMemo } from "react";
 import Image from "next/image";
-import ButtonPrimary from "@/app/(v1)/smart-hr/components/misc/button-primary";
+import ButtonPrimary from "@/app/(v1)/smart-hr/main/components/misc/button-primary";
 import {motion} from "framer-motion";
-import getScrollAnimation from "@/app/(v1)/smart-hr/components/utils/getScrollAnimation";
-import ScrollAnimationWrapper from "@/app/(v1)/smart-hr/components/layout/ScrollAnimationWrapper";
+import getScrollAnimation from "@/app/(v1)/smart-hr/main/components/utils/getScrollAnimation";
+import ScrollAnimationWrapper from "@/app/(v1)/smart-hr/main/components/page/ScrollAnimationWrapper";
 
 export default function About ({
   listUser = [
@@ -29,7 +30,7 @@ export default function About ({
 
   return (
     <div
-      className="max-w-screen-xl mt-24 px-8 xl:px-16 mx-auto"
+      className="max-w-screen-xl mt-24 px-8 xl:px-16 mx-auto py-20"
       id="about"
     >
       <ScrollAnimationWrapper className="">

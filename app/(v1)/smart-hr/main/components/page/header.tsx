@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 // Import react scroll
 import { Link as LinkScroll } from "react-scroll";
-import ButtonOutline from "@/app/(v1)/smart-hr/components/misc/button-outline";
+import ButtonOutline from "@/app/(v1)/smart-hr/main/components/misc/button-outline";
 import LogoVPN from "@/public/assets/Logo.svg";
 
 export default function Header () {
@@ -108,7 +108,7 @@ export default function Header () {
               </span>
             </Link>
             <ButtonOutline>
-              <Link href="/accounts/register">Register</Link>
+              <Link href="/accounts/register">Daftar</Link>
             </ButtonOutline>
           </div>
         </nav>

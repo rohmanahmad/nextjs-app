@@ -1,3 +1,5 @@
+'use client'
+
 export default function ClientDashboardPage () {
-  return <h1>Client Dashboard Page</h1>
+  return 'page 1'
 }

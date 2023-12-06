@@ -1,4 +1,5 @@
 'use client'
+
 import React, { useState, useMemo } from "react";
 import { Link as LinkScroll } from "react-scroll";
 
@@ -10,9 +11,8 @@ import Stars from "@/public/assets/Icon/stars.svg";
 import ArrowBack from "@/public/assets/Icon/eva_arrow-back-fill.svg";
 import ArrowNext from "@/public/assets/Icon/eva_arrow-next-fill.svg";
 
-import ButtonPrimary from "@/app/(v1)/smart-hr/components/misc/button-primary";
-import getScrollAnimation from "@/app/(v1)/smart-hr/components/utils/getScrollAnimation";
-import ScrollAnimationWrapper from "@/app/(v1)/smart-hr/components/layout/ScrollAnimationWrapper";
+import getScrollAnimation from "@/app/(v1)/smart-hr/main/components/utils/getScrollAnimation";
+import ScrollAnimationWrapper from "@/app/(v1)/smart-hr/main/components/page/ScrollAnimationWrapper";
 
 export default function Testimoni({
   listTestimoni = [
@@ -91,11 +91,11 @@ export default function Testimoni({
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   return (
     <div
-      className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
-      id="pricing"
+      className="bg-gradient-to-b from-white-300 to-white-500 w-full py-20"
+      id="testimoni"
     >
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
-        <div className="flex flex-col w-full my-16" id="testimoni">
+        <div className="flex flex-col w-full my-16">
           <ScrollAnimationWrapper className="">
             <motion.h3
               variants={scrollAnimation}

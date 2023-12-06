@@ -1,3 +1,5 @@
+'use client'
+
 import React from "react";
 import LogoVPN from "@/public/assets/Logo.svg";
 import Facebook from "@/public/assets/Icon/facebook.svg";
