@@ -1,5 +1,9 @@
 'use client'
 
+import Header from './components/header'
+
 export default function ClientDashboardPage () {
-  return 'page 1'
+  return (
+    <Header/>
+  )
 }
